@@ -1,0 +1,166 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  min-height:100vh;
+  background: linear-gradient(to top right, #389f63b6 0%, #4ec6ca 100%);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.sub-but{
+  width:2.5rem;
+  height:2.5rem;
+  background: linear-gradient(to top right, #389f63b6 0%, #4ec6ca 100%); 
+  border-radius:1.25rem;
+  border-width:1px;
+  font-size: 0.75rem;
+  font-weight:bold;
+  margin-left:1rem;
+  margin-top: 2.3rem;
+}
+.sub-but:hover{
+  box-shadow:inset 1px 1px 5px;
+  cursor: pointer;
+}
+.App{
+  width:100%;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  overflow-y:auto;
+}
+
+.notes-div{
+  display:flex;
+  width:15rem;
+  height:auto;
+  align-items: center;
+  opacity:0;
+  padding-bottom: 5%;
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
+    transform: translateX(-20%);
+  }
+  to {
+    transform: translateX(0);
+
+    opacity: 1;
+  }
+}
+.edit-save{
+  width:4rem;
+  height:2.5rem;
+  background: linear-gradient(to top right, #389f63b6 0%, #4ec6ca 100%); 
+  border-radius:1.25rem;
+  border-width:1px;
+  font-size: 0.70rem;
+  font-weight:bold;
+  margin-left:1rem;
+  cursor: pointer;
+}
+
+.edit-input{
+  width:13rem;
+  border-radius: 7rem;
+  border:none;
+  padding:0.9rem 0.9rem;
+  margin-top:10%;
+}
+.edit-input:focus{
+  outline:none;
+}
+.all-notes{
+  margin-top:2rem;
+  margin-right:1.3rem;
+  
+}
+.task-input{
+  width:15rem;
+  border-radius: 7rem;
+  border:none;
+  padding:0.9rem 0.9rem;
+  margin-top:10%;
+  box-shadow:0 5px 5px rgba(0, 0, 0, 0.2)
+}
+.task-input:focus{
+  outline:none;
+}
+.the-note{
+  border-color:#00ffff;
+  width:15rem;
+  height:auto;
+  overflow:none;
+  word-break: break-all;
+  background-color: white;
+  padding-left:5%;
+  margin-top:2rem;
+  border-radius: 5px;
+  box-shadow:0 10px 10px rgba(0, 0, 0, 0.2)
+  
+}
+.option-div{
+  padding-left:1rem;
+  margin-top:11%;
+
+
+}
+.form-div{
+  display:flex;
+  align-items: center;
+}
+
+
+.delete-all{
+  cursor:pointer;
+  background: rgb(184, 74, 87);
+  margin-right:3rem;
+  margin-top:1rem;
+  color:white;
+  border-radius:2rem;
+  padding:0.4em 0.4em;
+  border:none;
+  box-shadow:0 5px 5px rgba(0, 0, 0, 0.2);
+}
+.edit-div{
+  z-index:2;
+  display:flex;
+  justify-content: center;
+  position:absolute;
+  left:0;
+  top:0;
+  bottom:0;
+  right:0;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.input-div{
+  margin-top:15%;
+ 
+ 
+}
+.checkers{
+  margin-top:79%;
+  cursor: pointer;
+}
+.labelDiv{
+  width:15%;
+}
+.isChecked .the-note p {
+  text-decoration: line-through;
+}
+.isChecked .the-note  {
+  opacity: 0.5;
+}
+
+.edit-butt:hover{
+  cursor:pointer;
+
+}
